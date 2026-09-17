@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documento senza titolo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Titolo: Suzie Fleur Descrizione: Il sito dev'essere per una ragazza che fa l'artista di strada. Il sito deve avere la possibilità di essere visualizzato sia in italiano e sia in inglese (cambiare con un mini elenchino a discesa che ti chieda italiano o inglese). Il sito deve avere varie pagine.   CHI SONO: Descrizione che al momento ancora non ">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+.normal_text {
+font-family: Arial;
+font-size: 11.0PT;
+color: #000000;
+line-height: 1.15;
+direction: ltr;
+}
+h1 {
+font-size: 20.0PT;
+padding-top: 20.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h2 {
+font-size: 16.0PT;
+padding-top: 18.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h3 {
+font-size: 14.0PT;
+color: #434343;
+padding-top: 16.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h4 {
+font-size: 12.0PT;
+color: #666666;
+padding-top: 14.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h5 {
+font-size: 11.0PT;
+color: #666666;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h6 {
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+.title {
+font-size: 26.0PT;
+padding-bottom: 3.0PT;
+direction: ltr;
+}
+.subtitle {
+font-family: Arial;
+font-size: 15.0PT;
+color: #666666;
+padding-bottom: 16.0PT;
+direction: ltr;
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">Documento senza titolo</a></li>
+        <li><a href="index.html#untitled-document">Untitled document</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content" style="padding: 50px 0px 0px 0px;">
+<div class="section" id="documento-senza-titolo" style="clear: both; overflow: auto; ">
+<div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='direction: ltr; '><span style=''>Titolo: Suzie Fleur 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Descrizione: Il sito dev'essere per una ragazza che fa l'artista di strada. Il sito deve avere la possibilità di essere visualizzato sia in italiano e sia in inglese (cambiare con un mini elenchino a discesa che ti chieda italiano o inglese).
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Il sito deve avere varie pagine.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>CHI SONO: Descrizione che al momento ancora non possiedo, ma a breve avrò 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>EVENTI: Sezione per gli eventi futuri
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>SOCIAL: link/tag social 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>CONTATTI: Modulo di contatto, una volta fatto deve inviarmi le risposte su </span><span style='color: #1155cc; '><a href="mailto:yeejung.dessilani@gmail.com" style="color: #1155cc; ">yeejung.dessilani@gmail.com</a></span><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Piè di pagina: 2026 | Suzie Fleur
+</span></p></div>
+<div class="section" id="untitled-document" style="clear: both; overflow: auto; ">
+<div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p></div>
+
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
